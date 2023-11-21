@@ -44,6 +44,7 @@ body {
   padding: 10px;
   font-size: 20px;
   color: green;
+  outline: none;
 }
 .container .box .box-1 #username:hover {
   cursor: pointer;
@@ -57,19 +58,31 @@ body {
   color: white;
   font-size: 25px;
 }
+.container .box .box-1 .input {
+  border-bottom: 2px solid green;
+  display: flex;
+  align-items: center;
+}
+.container .box .box-1 .input #eye-1 {
+  font-size: 25px;
+}
+.container .box .box-1 .input #eye-2 {
+  display: none;
+  font-size: 25px;
+}
 .container .box .box-1 #password {
   background: fixed;
   border: none;
-  border-bottom: 2px solid green;
   padding: 10px;
   font-size: 20px;
   color: green;
+  outline: none;
 }
-.container .box .box-1 #password:hover {
+.container .box .box-1 .input:hover {
   cursor: pointer;
   border-bottom: 5px solid green;
 }
-.container .box .box-1 #password:active {
+.container .box .box-1 .input:active {
   border-bottom: 5px solid red;
 }
 .container .box .box-1 #button {

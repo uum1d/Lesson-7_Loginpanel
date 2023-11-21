@@ -3,6 +3,8 @@ let password = document.getElementById('password')
 let button = document.getElementById('button')
 let text_1 = document.getElementById('text-1')
 let text_2 = document.getElementById('text-2')
+let eye_1 = document.getElementById('eye-1')
+let eye_2 = document.getElementById('eye-2')
 console.log('admin => Email' )
 console.log('12341234 => Password')
 
@@ -69,4 +71,19 @@ username.addEventListener('click', () => {
 })
 password.addEventListener('click', () => {
     text_2.style.display = 'block'
+})
+
+eye_1.addEventListener('click', () => {
+    eye_1.style.display = 'none' 
+    eye_2.style.display = 'flex' 
+    if(password.type === 'password'){
+        password.type = 'text'
+    }
+})
+eye_2.addEventListener('click', () => {
+    eye_2.style.display = 'none'  
+    eye_1.style.display = 'flex'
+    if(password.type !== 'password' ){
+        password.type = 'password' 
+    }
 })
